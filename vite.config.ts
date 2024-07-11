@@ -11,6 +11,7 @@ import GitHubAlerts from 'markdown-it-github-alerts'
 import UnoCSS from 'unocss/vite'
 import MarkdownItShiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 // @ts-expect-error missing types
 import TOC from 'markdown-it-table-of-contents'
@@ -34,7 +35,7 @@ export default defineConfig({
   },
   plugins: [
     UnoCSS(),
-
+    vueDevTools(),
     Vue({
       include: [/\.vue$/, /\.md$/],
       script: {
