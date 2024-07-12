@@ -9,12 +9,17 @@ const routerOptions: RouterOptions = {
       name: 'Root',
       component: () => import('@/pages/index.vue')
 
+    },
+    {
+      path: '/test',
+      name: 'Test',
+      component: () => import('@/pages/test.md')
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('@/pages/404.md')
     }
-    // {
-    //   path: '/:pathMatch(.*)*',
-    //   name: 'NotFound',
-    //   component: () => import('@/pages/404/index.vue')
-    // }
   ]
 }
 

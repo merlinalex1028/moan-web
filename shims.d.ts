@@ -1,7 +1,14 @@
-import 'vue-router'
+// with unplugin-vue-markdown, markdown files can be treated as Vue components
+declare module '*.vue' {
+  import type { ComponentOptions } from 'vue'
 
-declare module 'vue-router' {
-  interface RouteMeta {
-    frontmatter: any
-  }
+  const Component: ComponentOptions
+  export default Component
+}
+
+declare module '*.md' {
+  import type { ComponentOptions } from 'vue'
+
+  const Component: ComponentOptions
+  export default Component
 }
