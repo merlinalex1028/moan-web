@@ -4,6 +4,6 @@
 
 <template>
   <div>
-    index
+    BookMark
   </div>
 </template>

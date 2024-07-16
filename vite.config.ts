@@ -19,7 +19,7 @@ import { slugify } from './scripts/slugify'
 
 export default defineConfig({
   server: {
-    port: 3333
+    port: 3334
   },
   resolve: {
     alias: [

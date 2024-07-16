@@ -3,6 +3,7 @@ import type { Router, RouterOptions } from 'vue-router'
 import { blogRoutes } from './blog'
 import { projectRoutes } from './project'
 import { noteRoutes } from './note'
+import { bookmarkRoutes } from './bookmark'
 
 const routerOptions: RouterOptions = {
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,13 +11,8 @@ const routerOptions: RouterOptions = {
     {
       path: '/',
       name: 'Root',
-      component: () => import('@/pages/index.vue')
+      component: () => import('@/pages/index.md')
 
-    },
-    {
-      path: '/test',
-      name: 'Test',
-      component: () => import('@/pages/test.md')
     },
     {
       path: '/:pathMatch(.*)*',
@@ -25,7 +21,8 @@ const routerOptions: RouterOptions = {
     },
     ...blogRoutes,
     ...projectRoutes,
-    ...noteRoutes
+    ...noteRoutes,
+    ...bookmarkRoutes
   ]
 }
 
