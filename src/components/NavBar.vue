@@ -41,6 +41,9 @@ const { y: scroll } = useWindowScroll()
         <RouterLink to="/notes" title="Notes">
           <div i-ri-screenshot-line />
         </RouterLink>
+        <RouterLink to="/bookmarks" title="Bookmarks">
+          <div i-material-symbols:bookmark-add-outline />
+        </RouterLink>
         <a href="https://x.com/merlinalex1028" target="_blank" title="Twitter" class="lt-md:hidden">
           <div i-ri-twitter-x-fill />
         </a>

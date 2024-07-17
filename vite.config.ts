@@ -12,6 +12,7 @@ import UnoCSS from 'unocss/vite'
 import MarkdownItShiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 // @ts-expect-error missing types
 import TOC from 'markdown-it-table-of-contents'
@@ -99,7 +100,8 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        '@vueuse/core'
+        '@vueuse/core',
+        unheadVueComposablesImports
       ]
     }),
 
