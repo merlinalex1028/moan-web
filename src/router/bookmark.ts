@@ -2,6 +2,6 @@ export const bookmarkRoutes = [
   {
     path: '/bookmarks',
     name: 'Bookmarks',
-    component: () => import('@/pages/bookmark/index.vue')
+    component: () => import('@/pages/bookmark/index.md')
   }
 ]
