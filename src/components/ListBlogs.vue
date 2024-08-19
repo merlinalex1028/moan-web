@@ -1,7 +1,5 @@
 <script setup lang="ts">
-useHead({
-  title: 'Blogs - Merlin Alex'
-})
+
 </script>
 
 <template>
@@ -9,3 +7,7 @@ useHead({
     Blog
   </div>
 </template>
+
+<style scoped lang="scss">
+
+</style>

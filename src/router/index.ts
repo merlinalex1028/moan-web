@@ -4,6 +4,7 @@ import { blogRoutes } from './blog'
 import { projectRoutes } from './project'
 import { noteRoutes } from './note'
 import { bookmarkRoutes } from './bookmark'
+import { codeRoutes } from './code-snippet'
 
 const routerOptions: RouterOptions = {
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,7 +23,8 @@ const routerOptions: RouterOptions = {
     ...blogRoutes,
     ...projectRoutes,
     ...noteRoutes,
-    ...bookmarkRoutes
+    ...bookmarkRoutes,
+    ...codeRoutes
   ]
 }
 
