@@ -65,8 +65,10 @@ Cypress.Commands.add('login', ({ phone, password }: { phone: string, password: s
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //
 declare global {
+  // eslint-disable-next-line ts/no-namespace
   namespace Cypress {
     interface Chainable {
+      // eslint-disable-next-line ts/method-signature-style
       login(params: { phone: string, password: string }): Chainable<void>
       //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
       //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>

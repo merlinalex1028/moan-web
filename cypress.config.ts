@@ -5,6 +5,7 @@ export default defineConfig({
     baseUrl: 'http://localhost:3334/',
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      console.error('cypress.config.ts', on, config)
     }
   },
 

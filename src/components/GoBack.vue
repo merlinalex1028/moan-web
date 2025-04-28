@@ -5,7 +5,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <div v-if="route.path !== '/'" class="prose slide-enter m-auto mb-8 mt-8 animate-delay-500 print:hidden">
+  <div v-if="route.path !== '/'" class="slide-enter prose m-auto mb-8 mt-8 animate-delay-500 print:hidden">
     <span font-mono op50>> </span>
     <RouterLink
       :to="route.path.split('/').slice(0, -1).join('/') || '/'"
