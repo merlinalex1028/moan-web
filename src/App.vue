@@ -5,9 +5,13 @@ const route = useRoute()
 </script>
 
 <template>
-  <NavBar />
-  <main class="of-x-hidden px-7 py-10">
-    <RouterView />
-    <Footer :key="route.path" />
-  </main>
+  <div class="min-h-screen flex flex-col font-mao">
+    <div class="sticky top-0 z-50">
+      <NavBar />
+    </div>
+    <main class="flex-1 overflow-x-hidden">
+      <RouterView />
+    </main>
+    <Footer v-if="route.meta.showFooter" />
+  </div>
 </template>
